@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 class Link {
 
         private:
@@ -9,14 +11,14 @@ class Link {
                 Link();
 
                 Link(double value);
-
-		Link(std::ostream& os, const Link& link);
-
-                ~Link();
+                
+		~Link();
 
                 double value;
 
                 Link* next;
+
+		std::ostream& os, const Link& link;
 
 
 
