@@ -22,7 +22,8 @@ class LinkedList {
 		{
 			// default deconstructor
 		}
-
-		void LinkedList::insert(double value);
-
 };
+
+void LinkedList::insert(double value);
+
+

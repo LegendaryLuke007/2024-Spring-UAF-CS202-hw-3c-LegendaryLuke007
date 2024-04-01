@@ -22,9 +22,13 @@ Link::Link(double value)
 
 
 }
+
 // Related to Link(operator) in Link.h
 std::ostream& operator<<(std::ostream& os, const Link& link)
-
+{
+	os << link.data;
+	return os;
+}
 
 Link::~Link()
 {

@@ -18,7 +18,7 @@ class Link {
 
                 Link* next;
 
-		std::ostream& os, const Link& link;
+		std::ostream& operator<<(std::ostream& os, const Link& link);
 
 
 
