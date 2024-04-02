@@ -2,16 +2,17 @@
 // Class CS 202
 // Teacher: Dr. Shwartz
 // 3/31/24
+#include <iostream>
 #include "LinkedList.h"
 #include "Link.h"
 
 int main() {
 
-	LinkedList* myLinkedList = new LinkedList();
+	LinkedList list;
 
-	myLinkedList.push_back(37.0);
-	myLinkedList.push_back(100.25);
-	myLinkedList.push_back(-17.5);
+	List.insert(37.0);
+	List.insert(100.25);
+	List.insert(-17.5);
 
 
 	return 0;

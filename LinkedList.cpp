@@ -25,25 +25,30 @@ LinkedList::~LinkedList()
 
 }
 
-void LinkedList::push_back(double value) 
+void LinkedList::insert(double value) 
 {
-	
-	Link* newLink = new Link(value);
 
 	if (head == nullptr) {
 		
-		head == newLink;
+		head = new Link(value);
 	
 	}
+	
 	else 
 	{
-		LinkedList* current = head;
-		while (current->next != nullptr)
+		Link* current = head;
+		Link* previous = nullptr;
+		
+		while (current != nullptr)
 		{
-			current = current ->next;
+			previous = current;
+
+			current = current->next; // "next" is from Link.h
 		}
+	
+		previous.next = new Link(value);
 	}
 
-	std::cerr << "Inserted a new linke with value " << value << " at the end of teh list." << std::endl;	
+	std::cerr << "Inserted a new link with value " << value << " at the end of teh list." << std::endl;	
 
 }

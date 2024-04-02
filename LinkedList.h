@@ -13,17 +13,11 @@ class LinkedList {
 		Link* head;
 
 	public:
-		LinkedList()
-		{
-			// default constructor
-		}
+		LinkedLedList();
 
-		~LinkedList()
-		{
-			// default deconstructor
-		}
+		~LinkedList();
+
+		void insert(double value);
 };
-
-void LinkedList::insert(double value);
 
 

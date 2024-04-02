@@ -15,19 +15,15 @@ Link::Link()
 
 }
 
-Link::Link(double value)
+Link::Link(double v) 
+	: value{v}
+      	,next{nullptr}
+
 {
 
 	std::cerr << "Link(" << value <<") is being constructed" << std::endl;
 
 
-}
-
-// Related to Link(operator) in Link.h
-std::ostream& operator<<(std::ostream& os, const Link& link)
-{
-	os << link.data;
-	return os;
 }
 
 Link::~Link()
@@ -40,3 +36,16 @@ Link::~Link()
        
 }
 
+
+
+std::ostream& operator<<(std::ostream& os, const Link& link)
+{
+        os << "Link(" << value << ")";
+        if (link->next != nullptr)
+        {
+
+                os << " -> " << *(link->next);
+        }
+
+        return os;
+}
