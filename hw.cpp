@@ -10,9 +10,9 @@ int main() {
 
 	LinkedList list;
 
-	List.insert(37.0);
-	List.insert(100.25);
-	List.insert(-17.5);
+	list.insert(37.0);
+	list.insert(100.25);
+	list.insert(-17.5);
 
 
 	return 0;

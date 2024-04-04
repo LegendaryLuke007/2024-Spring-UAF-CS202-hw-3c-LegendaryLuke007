@@ -13,7 +13,7 @@ class LinkedList {
 		Link* head;
 
 	public:
-		LinkedLedList();
+		LinkedList();
 
 		~LinkedList();
 

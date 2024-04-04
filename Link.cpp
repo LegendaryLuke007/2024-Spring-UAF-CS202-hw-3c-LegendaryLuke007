@@ -10,7 +10,7 @@ Link::Link()
         : value{0.0}, next{nullptr}
 {
 
-                std::cerr << "Link("<< value <<") is being constructed" << std::endl;
+                std::cerr << "Link(" << value << ") is being constructed" << std::endl;
 
 
 }
@@ -21,7 +21,7 @@ Link::Link(double v)
 
 {
 
-	std::cerr << "Link(" << value <<") is being constructed" << std::endl;
+	std::cerr << "Link object cosntructed using Link(" << value << ") constructor" << std::endl;
 
 
 }
@@ -40,11 +40,11 @@ Link::~Link()
 
 std::ostream& operator<<(std::ostream& os, const Link& link)
 {
-        os << "Link(" << value << ")";
-        if (link->next != nullptr)
+        os << "Link(" << link.value << ")";
+        if (link.next != nullptr)
         {
 
-                os << " -> " << *(link->next);
+                os << " -> " << *(link.next);
         }
 
         return os;

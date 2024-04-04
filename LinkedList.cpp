@@ -10,18 +10,18 @@
 LinkedList::LinkedList() 
 	: head{nullptr}
 {
-	std::cerr << "LinkedList(" << head << ") is being constructed." << std::endl;
+	std::cerr << "LinkedList object constructed using LinkedList() default constructor." << std::endl;
 
 }
 
 LinkedList::~LinkedList()
 {
 
-	std::cerr << "LinkedList(" << head << ") is being deconstructed." << std::endl;
+	std::cerr << "LinkedList() is being deconstructed using ~LinkedList() destructor" << std::endl;
 
 	delete head;
 
-	std::cerr << "LinkedList(" << head << ") has been deoncstructed." <<std::endl;
+	std::cerr << "LinkedList() has been deconstructed." <<std::endl;
 
 }
 
@@ -46,9 +46,9 @@ void LinkedList::insert(double value)
 			current = current->next; // "next" is from Link.h
 		}
 	
-		previous.next = new Link(value);
+		previous->next = new Link(value);
 	}
 
-	std::cerr << "Inserted a new link with value " << value << " at the end of teh list." << std::endl;	
+	std::cerr << "Inserted a new link with value " << value << " at the end of the list." << std::endl;	
 
 }

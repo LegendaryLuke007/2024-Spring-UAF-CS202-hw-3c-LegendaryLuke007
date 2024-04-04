@@ -10,7 +10,7 @@ hw.o: hw.cpp Link.h LinkedList.h
 Link.o: Link.cpp Link.h
 	g++ -std=c++17 -Wall -Wextra -c Link.cpp
 
-LinkedList.o: LinkList.cpp LinkedList.h
+LinkedList.o: LinkedList.cpp LinkedList.h
 	g++ -std=c++17 -Wall -Wextra -c LinkedList.cpp
 
 clean:
